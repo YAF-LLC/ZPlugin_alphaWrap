@@ -1,0 +1,35 @@
+<!-- 
+Copyright (C) 2023 Kazutaka Nakashima (kazutaka.nakashima@n-taka.info)
+
+GPLv3
+
+This file is part of alphaWrap.
+
+alphaWrap is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+alphaWrap is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License along with alphaWrap. If not, see <https://www.gnu.org/licenses/>.
+ -->
+
+<buttons>
+  <button path="ZPlugin:alphaWrap">
+    <title text="alphaWrap" trans="アルファラップ"/>
+  </button>
+  <button path="ZPlugin:alphaWrap:Alpha">
+    <title text="Alpha" trans="アルファ"/>
+    <info text="Parameter alpha for alpha wrapping\nSame as Dynamesh resolution" trans="パラメタアルファ\nダイナメッシュ解像度と同様の振る舞いをします"/>
+  </button>
+  <button path="ZPlugin:alphaWrap:Offset">
+    <title text="Offset" trans="オフセット"/>
+    <info text="Amount of offset for alpha wrapping\nSame as Dynamesh resolution" trans="オフセットの大きさ\nダイナメッシュ解像度と同様の振る舞いをします"/>
+  </button>
+  <button path="ZPlugin:alphaWrap:usePolygon">
+    <title text="usePolygon" trans="ポリゴン使用"/>
+    <info text="Use polygon for alpha wrapping\nWhen this switch is OFF, alpha wrapping only hendles points" trans="アルファラップの計算時にポリゴンを利用します\nOFFの場合、頂点を点群とみなして計算します"/>
+  </button>
+  <button path="ZPlugin:alphaWrap:Wrap">
+    <title text="Wrap" trans="計算開始"/>
+    <info text="Generate alpha wrap" trans="アルファラップを生成します"/>
+  </button>
+</buttons>

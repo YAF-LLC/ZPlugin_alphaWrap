@@ -1,0 +1,11 @@
+{
+    "name": "zplugin-alphawrap",
+    "version-string": "2023",
+    "description": "ZBrush plugin for alpha wrapping (in CGAL)",
+    "homepage": "https://github.com/YAF-LLC/ZPlugin_alphaWrap",
+    "dependencies": [
+        "nlohmann-json",
+        "cgal",
+        "eigen3"
+    ]
+}
