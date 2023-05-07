@@ -73,7 +73,7 @@ inline void alphaWrap(
 
     Mesh::Vertex_range r = wrap.vertices();
     int vIdx = 0;
-    for (auto &vIter = r.begin(); vIter != r.end(); ++vIter)
+    for (auto vIter = r.begin(); vIter != r.end(); ++vIter)
     {
         const Point_3 &point = wrap.point(*vIter);
         wrapV(vIdx, 0) = point.x();
@@ -84,11 +84,11 @@ inline void alphaWrap(
 
     Mesh::Face_range f = wrap.faces();
     int fIdx = 0;
-    for (auto &fIter = f.begin(); fIter != f.end(); ++fIter)
+    for (auto fIter = f.begin(); fIter != f.end(); ++fIter)
     {
         CGAL::Iterator_range<CGAL::Vertex_around_face_iterator<Mesh>> fv = CGAL::vertices_around_face(wrap.halfedge(*fIter), wrap);
         int fvIdx = 0;
-        for (auto &vIter = fv.begin(); vIter != fv.end(); ++vIter)
+        for (auto vIter = fv.begin(); vIter != fv.end(); ++vIter)
         {
             // alpha wrap in CGAL guarantees that the output is triangulated
             // https://doc.cgal.org/latest/Alpha_wrap_3/index.html#title3

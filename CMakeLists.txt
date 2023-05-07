@@ -86,8 +86,8 @@ if (WIN32)
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/build/Release/plugin/Release/alphaWrap.dll" "$<TARGET_FILE_DIR:${PROJECT_NAME}>")
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/build/Release/plugin/Release/alphaWrap.dll" "${CMAKE_CURRENT_SOURCE_DIR}/ZPlugs64/alphaWrap_2022/alphaWrap.dll")
 elseif (APPLE)
-    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/build/plugin/libalphaWrap.dylib" "$<TARGET_FILE_DIR:${PROJECT_NAME}>/alphaWrap.lib")
-    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/build/plugin/libalphaWrap.dylib" "${CMAKE_CURRENT_SOURCE_DIR}/ZPlugs64/alphaWrap_2022/alphaWrap.lib")
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/build/Release/plugin/libalphaWrap.dylib" "$<TARGET_FILE_DIR:${PROJECT_NAME}>/alphaWrap.lib")
+    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_SOURCE_DIR}/build/Release/plugin/libalphaWrap.dylib" "${CMAKE_CURRENT_SOURCE_DIR}/ZPlugs64/alphaWrap_2022/alphaWrap.lib")
 endif ()
 ###########################
 ##### Resources (end) #####
